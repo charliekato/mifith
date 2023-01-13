@@ -1,0 +1,17 @@
+            if (c==3) {
+               // mvprintw(5,5,"code is %d,%d,%d", buf[0], buf[1], buf[2]);
+                if (right(buf) ) {
+                    x=inc(x);
+                    disp_man(&oldx,&x,man[manidx][0],manidx);
+                    refresh();
+                }
+                if (left(buf) ) {
+                    x=dec(x);
+                    disp_man(&oldx,&x,man[manidx][0],manidx);
+                    refresh();
+                }
+                p=buf;
+                *p=0;
+                c=0;
+            }
+
